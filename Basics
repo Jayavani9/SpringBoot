@@ -1,0 +1,51 @@
+SPRING BOOT
+
+
+View: The view represents the visual elements of a web page. What the user sees.
+
+Model : Data needed by the view. The model represents the data.
+The view needs data to become meaningful.
+
+Controller: Glues the Model and View together. Responds to requests by managing Model and presenting the view. The controller handles every web request. When a user makes a request, the controller maps the request to a handler method. The handler method finally returns the updated view. 
+
+Spring Boot applications follow the MVC Design. 
+
+
+Annotations:
+
+Spring Boot uses Annotations to add logic to an application without any code.
+
+Controller: Converts a class into a controller. 
+
+When you annotate a class with @Controller, it becomes the entry point for all web requests.  
+The controller class contains handler methods. A handler method can respond to a web request. 
+One type of a request it can handle is a GET request. 
+
+
+GET REQUEST:
+
+User is requesting a resource. A GET request is when the user wants to get a resource from Our Spring Boot application. 
+The user can make a request from the browser. The URL that they type must specify: 
+Host
+Port 
+Path
+
+
+		The Host and Port will send the request to the Spring Boot app.
+		Once their request reaches the app, the controller is its entry point. 
+		The controller uses the path portion of a request to decide which handler method 
+    to run. The handler method responds by returning a resource(HTML).
+
+
+
+GetMapping: Converts a method into a handler method.
+The handler method can respond to get requests.
+Receives a path argument (@GetMapping(“/hello”))
+The handler method can respond to requests made on the path (/hello).
+
+
+
+References: 
+
+https://www.udemy.com/course/the-complete-spring-boot-development-bootcamp/learn/lecture/32394438?start=105#overview
+
